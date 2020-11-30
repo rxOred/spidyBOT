@@ -323,9 +323,7 @@ mainapp = Gui(root, image)
 try:
     from bs4 import BeautifulSoup
 except ImportError:
-    import BeautifulSoup
-except ImportError:
-    mainapp.errormsg = messagebox.showerror(title = 'Import error', message = "couldnt find bs4. try downloading it manually or use command pip3 install beutifulsoup")
+    mainapp.errormsg = messagebox.showerror(title = 'Import error', message = "couldnt find bs4. try copying bs4 and pasting it on this directory")
     exit() 
 
 root.mainloop()
