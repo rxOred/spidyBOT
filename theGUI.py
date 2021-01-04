@@ -195,8 +195,7 @@ def advance_crawler(url):
             print(links, file=htmltags)
             
             try:
-                v =  re.search("")
-                #mainapp.display_text.insert('1.0 + 2 lines', '\ncrawling :' + links)
+                mainapp.display_text.insert('1.0 + 2 lines', '\ncrawling :' + links)
                 
                 reqs = Request(links, headers={'User-Agent': 'Mozilla/4.0'})
                 htmls = urllib.request.urlopen(reqs)
